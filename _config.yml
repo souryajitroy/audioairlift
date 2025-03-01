@@ -24,33 +24,32 @@ description: >-
   AudioAirlift is an AI-powered playlist generator that curates music based on your preferences.
   Easily generate and manage playlists using AI.
 
-baseurl: "" # Keep empty for the root domain
-#url: "https://audioairlift.com" # Update this after deployment
+baseurl: ""  # Keep empty for the root domain
+url: "https://souryajitroy.github.io/audioairlift"
 
-#twitter_username: ""
-github_username: souryajitroy
+# Remove this line since you're not using Minima anymore:
+# theme: minima 
 
-# Build settings
-theme: minima
+# Set markdown processor
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Include your layout directory explicitly
+include:
+  - _layouts
+  - assets
+
+# Plugins
 plugins:
   - jekyll-feed
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# Exclude unnecessary files
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - _site/

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+</head>
+<body>
+    <header>
+        <h1><a href="{{ "/" | relative_url }}">AudioAirlift</a></h1>
+        <nav>
+            <a href="{{ "/about" | relative_url }}">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h1>{{ page.title }}</h1>
+            <p><small>Published on {{ page.date | date: "%B %d, %Y" }}</small></p>
+            <div class="content">
+                {{ content }}
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AudioAirlift</p>
+    </footer>
+</body>
+</html>
+Step 5: Fix the 404 Page Layout
+Your error message also mentioned:
+
+nginx
+Copy
+Edit
+Build Warning: Layout 'page' requested in 404.html does not exist.
+So, let's create a page.html layout.
+
+2. Create _layouts/page.html
+Inside _layouts/, create a new file called page.html and add the following content:
+
+html
+Copy
+Edit
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+</head>
+<body>
+    <header>
+        <h1><a href="{{ "/" | relative_url }}">AudioAirlift</a></h1>
+        <nav>
+            <a href="{{ "/about" | relative_url }}">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>{{ page.title }}</h1>
+        <div class="content">
+            {{ content }}
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AudioAirlift</p>
+    </footer>
+</body>
+</html>

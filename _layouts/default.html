@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | AudioAirlift</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+    <style>
+        /* Center and enlarge the logo */
+        .logo-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .logo-container img {
+            width: 200px;  /* Adjust size as needed */
+            height: auto;
+        }
+
+        /* Center the navigation */
+        nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <a href="{{ site.baseurl }}/">
+                <img src="{{ site.baseurl }}/assets/images/audioairlift.jpeg" alt="AudioAirlift Logo">
+            </a>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="{{ site.baseurl }}/">Home</a></li>
+                <li><a href="{{ site.baseurl }}/about/">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {{ content }}
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AudioAirlift. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

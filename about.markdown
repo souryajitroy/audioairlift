@@ -1,8 +1,8 @@
 ---
 layout: default
 title: About
+permalink: /about/
 ---
-
 # About AudioAirlift 🎧  
 
 Welcome to **AudioAirlift**, where AI meets music in the most fun way possible!  
