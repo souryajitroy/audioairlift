@@ -27,6 +27,9 @@ description: >-
 baseurl: ""  # Keep empty for the root domain
 url: "https://souryajitroy.github.io/audioairlift"
 
+# Set source directory explicitly
+source: 
+
 # Remove this line since you're not using Minima anymore:
 # theme: minima 
 
